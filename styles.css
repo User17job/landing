@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Spice&family=Irish+Grover&family=Madimi+One&family=Oswald:wght@200..700&family=Pixelify+Sans:wght@400..700&family=Rubik+Scribble&display=swap');
+
+*,::after,::before{
+    margin:0;
+    padding:0;
+    font-family: "Madimi One", sans-serif;
+    box-sizing: border-box
+  }
+  body{
+    background-color: aliceblue;
+  }
+  /*  */
+  #nav-bar{
+  position:fixed;
+  top:0px;
+  background-color: rgba(206, 249, 255, 0.434);
+  width:100%;
+  height:65px;
+  padding:0.7rem;
+  text-align:end;
+  margin-bottom: 100px;
+  z-index: 2;
+  }
+  #nav-bar>#img{
+    position: absolute;
+    left: 1%;
+  }
+  #nav-bar>.nav-link{
+    margin: 10px;
+  }
+
+  /*  */
+  .container{
+    position: relative;
+    z-index: 1;
+  }
+  .container>form{
+    background-color: rgb(221, 234, 246);
+    position: relative;
+    top: 70px;
+    margin: auto;
+    width: 50%;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+   
+  }
+  .container>form>#email{
+    width: 60%;
+    height: 35px;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin: auto;
+    font-size: 15px;
+  }
+  .container>form>.btn{
+   width: 80px;
+   height: 30px;
+   border-radius: 5px;
+   font-size: 15px;
+   margin: auto;
+   margin-top: 5px;
+  }
+  /*  */
+  .container>.for-beneficios{
+    background-color: rgba(253, 242, 228, 0.721);
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    padding: 0.5rem;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    text-align: center;
+  }
+  .container>.for-beneficios>#beneficios>.bueno-1{
+    margin-top: 10px;
+  }
+  .container>.for-beneficios>#beneficios>.bueno-1>img{
+    transform: scale(0.5);
+  }
+  .container>.for-beneficios>#beneficios>.bueno-2{
+    margin-top: 10px;
+  }
+  .container>.for-beneficios>#beneficios>.bueno-2>img{
+    transform: scale(0.5);
+  }
+  .container>.for-beneficios>#beneficios>.bueno-3{
+    margin-top: 15px;
+  }
+  .container>.for-beneficios>#beneficios>.bueno-3>img{
+    transform: scale(0.5);
+  }
+  /*  */
+
+  .container>.for-video{
+    background-color: rgba(255, 99, 71, 0.468);
+    width: 95%;
+    height: auto;
+    border-radius: 5px;
+    position: relative;
+    margin: auto;
+    top: 150px;
+    padding: 2%;
+    text-align: center;
+  }
+  .container>.for-video>#video{
+     width: 400px;
+     height: 250px;
+     border-radius: 5px;
+     margin-top: 20px;
+     box-shadow: 0px 1px 10px rgb(135, 91, 91);
+  }
+  /*  */
+  .container>#for-pricing{
+    background-color: rgba(250, 235, 215, 0.573);
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-radius: 1%;
+    position: relative;
+    top: 200px;
+    padding: 0.5rem;
+    margin-bottom:30px;
+    text-align: center;
+  }
+  .container>#for-pricing>#pricing{
+    width: 99%;
+    height: 310px;
+    position: relative;
+    margin: auto;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    overflow: scroll;
+  }
+  .container>#for-pricing>#pricing::-webkit-scrollbar{
+    background-color: transparent;
+  }
+  .container>#for-pricing>#pricing>.product{
+    border: solid 1px white;
+    width:170px ;
+    height: 275px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(214, 233, 249);
+    box-shadow: 0px 2px 10px rgb(127, 155, 179);
+    margin-top: 5px;
+  }
+  .container>#for-pricing>#pricing>.product>div>.btn{
+    background-color: rgb(255, 227, 191);
+    padding: 0.3rem;
+    border-radius: 5px;
+  }
+  .container>#for-pricing>#pricing>.product>div>.btn:hover{
+    background-color: rgba(255, 99, 71, 0.632);
+    color: aliceblue
+
+  }
+  /*  */
+  a{
+    text-decoration: none;
+    color: rgb(177, 141, 94);
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  /*  */
+  .container>#footer{
+    background-color: rgb(4, 28, 50);
+    width: 100%;
+    height: 100px;
+    padding: 4px;
+    position: relative;
+    top: 185px;
+    text-align: center;
+    color: aliceblue;
+  }
+  .container>#footer>.footer-links{
+    margin: 10px;
+    margin-top: 50px;
+  }
+
+
+  @media screen and (max-width: 450px){
+    body{
+      color:rgb(130, 90, 90);
+    }
+  
+  }
+  @media screen and (max-width: 800px){
+    body{
+      color:rgb(169, 135, 135);
+    }
+
+    .container>#for-pricing{
+        width:99%;    
+      }
+  }
